@@ -4,3 +4,20 @@
 ## 数据
 - 完整数据文件（`amazon_pets.duckdb`，约42.4 GB）因体积过大未上传
 - 仓库中的 `sample.duckdb` 包含100条示例数据供测试
+
+## 示例数据库创建情况
+### 数据库信息
+- 文件路径 ： sample.duckdb
+- 总数据量 ：210 条数据
+- 包含表数 ：8 个表（与原始数据库结构一致）
+### 各表数据分布
+| 表名 | 数据量 | 说明 |
+|------|--------|------|
+| `pets_comment` | 30 条 | 原始评论数据 |
+| `pets_comment_cleaned` | 30 条 | 清洗后的评论数据 |
+| `pets_comment_duplicates` | 30 条 | 重复评论数据 |
+| `pets_comment_invalid` | 30 条 | 无效评论数据 |
+| `pets_comment_sentiment` | 30 条 | 情感分析结果 |
+| `pets_meta` | 15 条 | 产品元数据 |
+| `pets_meta_cleaned` | 15 条 | 清洗后的产品元数据 |
+| `staged_comment_bak` | 30 条 | 评论备份数据 |
